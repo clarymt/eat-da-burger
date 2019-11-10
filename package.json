@@ -1,0 +1,31 @@
+{
+  "name": "eat-da-burger",
+  "version": "1.0.0",
+  "description": "handlebars, MySQL, node, express, and ORM app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clarymt/eat-da-burger.git"
+  },
+  "keywords": [
+    "handlebars",
+    "MySQL",
+    "node",
+    "express",
+    "orm"
+  ],
+  "author": "Matt C",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/clarymt/eat-da-burger/issues"
+  },
+  "homepage": "https://github.com/clarymt/eat-da-burger#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "mysql": "^2.17.1"
+  }
+}
