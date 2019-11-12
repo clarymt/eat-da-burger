@@ -1,21 +1,21 @@
-<h1>burgers!</h1>
+<h1>Bomb Burgers!</h1>
 
-<h2>burgers that are not reorder!</h2>
+<h2>Burgers that NEED TO BE EATEN!</h2>
 
 <ul>
   {{#each burgers}}
     {{#unless reorder}}
-      {{> burgers/burger-block sleep=true}}
+      {{> burgers/burger-block eat=true}}
     {{/unless}}
   {{/each}}
 </ul>
 
-<h2>burgers that are reorder!</h2>
+<h2>Burgers that you GOT TO HAVE AGAIN!</h2>
 
 <ul>
   {{#each burgers}}
     {{#if reorder}}
-      {{> burgers/burger-block sleep=false}}
+      {{> burgers/burger-block eat=false}}
     {{/if}}
   {{/each}}
 </ul>
@@ -24,15 +24,15 @@
 <form class="create-form">
 <!--  THIS IS WHERE LOGIC BREAK ON ADDING FIND WHERE reorder QUALIFIER IS  -->
   <div class="form-group">
-    <label for="ca">burger Name:</label>
+    <label for="ca">Burger:</label>
     <input type="text" id="ca" name="name">
   </div>
-
+<br>
   <div class="form-group">
-    <label for="reorder">reorder?</label><br>
-    <input type="radio" name="reorder" value="1" checked> reorder!<br>
-    <input type="radio" name="reorder" value="0"> Awake
+    <label for="reorder">NOW or LATER?</label><br>
+    <input type="radio" name="reorder" value="1" checked> I WANT IT NOW!<br>
+    <input type="radio" name="reorder" value="0"> ...maybe later
   </div>
-
+<br>
   <button type="submit">Add burger</button>
 </form>
